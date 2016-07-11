@@ -1,7 +1,11 @@
 __author__ = 'craig'
 
-from collections import defaultdict
+# Requires the averaged_perceptron_tagger & punkt models.
+from nltk import word_tokenize, pos_tag
+# Requires the CMU corpus.
 from nltk.corpus import cmudict
+
+from collections import defaultdict
 from string import digits
 
 ARPABET = ["AA", "AE", "AH", "AO", "AW", "AY", "B", "CH", "D", "DH", "EH", "ER", "EY", "F", "G", "HH",
@@ -103,3 +107,9 @@ class Muse(object):
 
         # Could not ascertain a rhyme.
         return False
+
+    def POS_tagging(self, text):
+        '''
+        Tag each part in some text with a particle of speech.
+        '''
+        return pos_tag(word_tokenize(text))
