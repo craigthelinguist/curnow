@@ -1,8 +1,7 @@
 # curnow
 Automatic poetry generation.
 
-Running By Hand
-===============
+# Running By Hand
 
 Install the Python dependencies with
 
