@@ -9,13 +9,14 @@ Install the Python dependencies with
 pip -r install requirements.txt
 ```
 
-You'll also need some stuff for nltk. Open a Python REPL and enter
+You'll also need some stuff for nltk. Open a Python REPL and enter:
 
 ```python
+import nltk
 nltk.download()
 ```
 
-You need to install the following corpora:
+Then use the GUI to install the following corpora:
 - CMU
 
 And the following models:
