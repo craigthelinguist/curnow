@@ -1,0 +1,38 @@
+
+Sentence :=
+    <Simple>
+    <Compound>
+
+Simple :=
+    <Declarative>
+
+Compound :=
+    <Simple> <Conjunction> <Simple>
+
+PartOfSpeech :=
+    <Adjective>
+    <Article>
+    <Adverb>
+    <Conjunction>
+    <Interjection>
+    <Noun>
+    <Preposition>
+    <Pronoun>
+    <Verb>
+
+PrepPhrase
+
+Declarative :=
+    <Subject> <Predicate>
+
+Subject :=
+    <Noun> [[<PrepPhrase>]*]?
+
+NounPhrase :=
+    "the" <ProperNoun>
+    <NonPersonalPronoun>
+    <Article> [[<Adverb>]* <Adjective>]?
+    [[<Adverb>]* <Adjective>]? <NounPlural>
+    <ProperNounPossessive> [[<Adverb>]* <Adjective>]? <Noun>
+    <PersonalPossessiveAdjective> [<Adverb>* <Adjective>]? <Noun>
+    <Article> <CommonNounPossessive> [<Adverb>* <Adjective>*]? <Noun>

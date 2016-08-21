@@ -1,0 +1,21 @@
+
+Sentence :=
+    <NounPhrase> <Verb> <NounPhrase>
+
+Noun :=
+    "Cat"
+    "Man"
+    "Woman"
+
+ProperNoun :=
+    "Rawinia"
+    "Lilian"
+    "Florence"
+
+NounPhrase :=
+    "The" <Noun>
+    "ProperNoun"
+
+Verb :=
+    "Ate"
+    "Helped"
